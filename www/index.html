@@ -84,7 +84,9 @@
 		<script id="templates/home.html" type="text/ng-template">
 			<ion-view view-title="Home">
 				<ion-content padding="true">
-					<p>Content of Home page.</p>
+					<ion-list>
+						<ion-item ng-repeat="permission in permissions">{{permission}}</ion-item>
+					</ion-list>
 				</ion-content>
 			</ion-view>
 		</script>
